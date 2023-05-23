@@ -21,6 +21,12 @@ body {
     background-color: var(--background);
 }
 
+.logo {
+    width: 50%;
+    margin: none;
+
+}
+
 .info {
    width: 50%;
    height: 100%;
@@ -29,10 +35,11 @@ body {
 }
 
 .input-container {
-    position: fixed;
+    display: flex;
     align-items: center;
     margin-top: 1.875rem;
-    margin-left: 5%;
+    margin-left: 10px;
+    justify-content: center;
     width: 35.75rem;
     height: 32rem;
     background-color: var(--form-background);
@@ -44,23 +51,67 @@ body {
     height: 50px;
 }
 
+.box-mail {
+    border: none;
+    border: solid 1px var(--text-base);
+    background-color: transparent;
+    width: 335px;
+    height: 44px;
+    
+}
+
+.box-password {
+   /* border: none; */
+    border: solid 1px var(--text-base);
+    background-color: transparent;
+    width: 335px;
+    height: 44px;
+}
+
+.password {
+    margin-bottom: 40px ;
+}
 .login {
     display: flex;
     justify-content: center;
     width: 85%;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 4px;
 }
 .mail {
-    display: block;
+    margin-top: 26px;
 }
-.carimg {
-    display: flex;
-   margin-right: 0;
-   /* margin: 100px; */
-   justify-content: left;
-   /* width: 45rem; */
-   bottom: 900px;
-   /* padding-left: 100px; */
 
-   display: block;
+.carimg {
+    display: hight;
+    width: 50%;
+    height: 100%;
+    float: right;
+    object-fit: cover;
+}
+
+.bottom-login {
+    margin-top: 4px;
+}
+
+.top-enter {
+    position: absolute;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.box-password {
+    margin-bottom: 5px;
+}
+.enter {
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+
+.card  {
+    display: flex;
+    margin-top: 30px;
+    height: 20px;
 }
