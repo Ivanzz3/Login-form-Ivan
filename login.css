@@ -1,5 +1,117 @@
 :root {
-    --text-base: #afb6c2;
+    --text-base: #afb6c2;:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-base);
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  justify-content: space-between;
+  background-color: var(--background);
+}
+
+
+
+.info {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 3.125rem 1.875rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  /* margin-top: 1.875rem;
+  margin-left: 10px; */
+  justify-content: center;
+  /* width: 35.75rem; */
+  height: 32rem;
+  background-color: var(--form-background);
+  border-radius: 0.25rem;
+  flex-direction: column;
+}
+
+.logo-out {
+  height: 50px;
+}
+
+.box-mail {
+  border: none;
+  border: solid 1px var(--text-base);
+  background-color: transparent;
+  width: 335px;
+  height: 44px;
+}
+
+.box-password {
+  /* border: none; */
+  border: solid 1px var(--text-base);
+  background-color: transparent;
+  width: 335px;
+  height: 44px;
+}
+
+.password {
+  margin-bottom: 40px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.mail {
+  margin-top: 26px;
+}
+
+.bottom-login {
+  margin-top: 4px;
+}
+
+.check-input:checked {
+  display: none;
+}
+
+.top-enter {
+  position: absolute;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.box-password {
+  margin-bottom: 5px;
+}
+.enter {
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.card {
+  display: flex;
+  margin-top: 30px;
+  height: 20px;
+}
+
+aside .carimg{
+  width: 50%;
+  height: 100%;
+}
+
+
     --text-title: #d4ccb6;
     --background: #191816;
     --form-background: #24221f;
