@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #191816;
+    color: #afb6c2;
+    font-size: 10pt;
+    line-height: 30px;
+}
+
+a{
+    color: #ffc632;
+    text-decoration: none;
+}
+
+/*.container*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+/*.login*/
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    background-color: #191816;
+    padding-top: 50px;
+}
+
+.logo {
+    position: relative;
+    right: 30%;
+}
+.login main{
+    /*background-color: #24221f;*/
+    width: 90%;
+    padding: 10px;
+}
+main header .title{
+    display: flex;
+    gap: 10px;
+    color: #d4ccb6;
+}
+
+/*form*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+form label{
+    line-height: 30px;
+}
+form label section{
+    display: flex;
+    gap: 3px;
+    border: 1px solid #afb6c2;
+    border-radius: 3px;
+    padding: 10px;
+   
+}
+form label section:focus-within {
+    border: 2px solid #ffc632;
+}
+form label section:hover {
+    border: 2px solid #ffc632;
+}
+section .input{
+    margin-left: 30px;
+    background-color: #191816;
+    color: #afb6c2;
+    width: 80%;
+    border: none;
+}
+section .input:focus{
+    outline: 0;
+}
+
+/*Inputs*/
+.email{
+    background-image: url(./mail.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+.email:focus-within{
+    background-image: url(./mail-focus.svg);
+}
+.password{
+    background-image: url(./lock.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+.password:focus-within{
+    background-image: url(./lock-focus.svg);
+}
+
+/*checkbox*/
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.check > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.check div label{
+    cursor: pointer;
+}
+
+.check div label input[type="checkbox"]{
+    display: none;
+}
+.check div label span{
+    padding: 1px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    user-select: none;
+    overflow: hidden;
+}
+.check div label span:hover{
+    border-color: #ffc632;
+}
+.check div label input[type="checkbox"]:checked ~ span{
+   background-image: url(./check.svg);
+   background-color: #ffc632;
+}
+
+/*Button*/
+form > button{
+    background-color: #ffc632;
+    border:5px solid #ffc632;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form span{
+    text-align: center;
+}
+
+/*.figure*/
+.figure{
+    display: none;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    color: #d4ccb6;
+    font-style: italic;
+    margin-top: 12vh;
+}
+
+/*Responsividade*/
+@media screen and (min-width:600px){
+    .container{
+        margin: 50px auto;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container{
+        margin:0;
+        width: 100%;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .login{
+        width: 50%;
+        height: 100%;
+    }
+
+    .login main{
+        width: 60%;
+        background-color: #24221f;
+        border-radius: 10px;
+        padding: 50px;
+    }
+
+    section .input{
+        background-color: #24221f;
+    }
+
+    .figure{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding: 50px;
+        background: url(./side-image-2x.jpg) no-repeat;
+        background-size: cover;
+      }
+}

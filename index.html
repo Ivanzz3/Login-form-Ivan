@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="login.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-form-Ivan</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="login">
+            <div class="logo">
+                <img src="./logo.svg" alt="">
+            </div>
+            <main>
+                <header>
+                    <section class="title">
+                        <img src="./log-in.svg" alt="">
+                        <h1>Faça Seu Login</h1>
+                    </section>
+                    <p>Entre com suas informações de cadastro.</p>
+                </header>
+                <form>
+                    <label for="email">E-mail
+                        <section class="email"> 
+                            <input type="email" name="email" id="email" class="input"
+                                        placeholder="Digite seu e-mail" 
+                                        pattern="+@+"
+                                        title="nome@seudominio.com"
+                                        required>   
+                        </section>
+                    </label>
+                    <label for="password">Senha
+                        <section class="password">
+                            <input type="password" name="password" id="password" class="input" 
+                            placeholder="Digite sua senha"
+                            required>
+                            <img src="./eye.svg" id="eye">
+                        </section>
+                    </label>
+                    <section class="check">
+                        <div>
+                            <label>
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                            
+                            <p>Lembre-me</p>
+                        </div>
+                        <a href="">Esqueci minha senha</a>
+                        </section>
+                        <button type="submit">ENTRAR</button>
+                        <span>
+                            <a href="#">Não tem uma conta? <strong>Registre-se</strong> </a> 
+                        </span>
+                </form>
+            </main>
+            <footer>By Ivan.jr</footer>
+        </div>
+        <div class="figure"></div>
+    </div>
+</body>
+</html>
